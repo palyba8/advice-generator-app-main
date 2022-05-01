@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #1e2430;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#advice-number {
+    color: hsl(150, 100%, 66%);
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#advice {
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    padding: 0 50px;
+}
+
+
+.container {
+    width: 550px;
+    min-height: 330px;
+    background: #313a49;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+#dice {
+    background: hsl(150, 100%, 66%);
+    height: 60px;
+    width: 60px;
+    bottom: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+#dice:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(83, 255, 171, 0.65);
+    box-shadow: 0px 0px 30px 5px rgba(83, 255, 171, 0.65);
+}
+
+.divider {
+    margin: 30px auto 50px auto;
+    background: url(../images/pattern-divider-desktop.svg) no-repeat;
+    min-height: 16px;
+    width: 444px;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width : 560px) {
+
+    #advice-number {
+        font-size: 11px;
+    }
+
+    #advice {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 340px;
+        min-height: 320px;
+    }
+
+    .divider {
+        margin: 30px auto 70px auto;
+        background: url(../images/pattern-divider-mobile.svg) no-repeat;
+        min-height: 16x;
+        width: 295px;
+    }
+
+
+}
